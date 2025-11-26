@@ -31,11 +31,11 @@ We can see the standard http/https ports and SSH.
 
 Navigating to the webpage and inspecting the HTML gives a cool easter egg.
 
-< 1. easter egg >
+<img width="568" height="132" alt="1  easter egg" src="https://github.com/user-attachments/assets/2958bca0-af34-491e-92d4-45b7fe228876" />
 
 The actual contents of the web page are very minimal with a few commands that invoke videos, and other data. 
 
-< 3. loading into webpage > 
+<img width="1134" height="269" alt="3  loading into webpage" src="https://github.com/user-attachments/assets/7ca1033d-20cd-4ade-b475-a63e4a86ec39" />
 
 Without wasting anytime, were going to enumerate the directories with gobuster using the command:
 
@@ -86,7 +86,7 @@ Let's navigate to /robots
 
 Gives us our first key. 
 
-< 6. navigating to key >
+<img width="292" height="26" alt="3  first flag" src="https://github.com/user-attachments/assets/d631bc7e-9946-4875-a118-150f8cd2f389" />
 
 ```bash
 
@@ -121,7 +121,7 @@ In the meantime lets navigate to:
 
 this page was found while I was poking around
 
-< 9. second flag >
+<img width="273" height="55" alt="4  second flag" src="https://github.com/user-attachments/assets/136792fa-c4a9-4351-ba38-340945062fa6" />
 
 It's encrypted with base64 so let's decrypt it using the command:
 
@@ -145,7 +145,7 @@ Let's navigate to:
 
 Entering Elliot's credentials gives us access to the wordpress dashboard. 
 
-< 10. loggin into wp >
+<img width="1343" height="921" alt="10  logging into wp with elliots usernmame and password" src="https://github.com/user-attachments/assets/e7dee79b-3d96-45c8-9b63-fa9b6a7a4a29" />
 
 From previous CTF's i've done a reverse shell exploit on wordpress by replacing the template on 404.php with the malicious payload. 
 
@@ -155,7 +155,7 @@ The code that I am using is from http://pentestmonkey.net/
 
 PHP Reverse Shell:
 
-< 12. uploading reverses shell >
+<img width="1096" height="851" alt="11  uploading php reverse shell from pentest monkey github" src="https://github.com/user-attachments/assets/5ef47e78-70f6-4de8-a382-61ce4eec7e85" />
 
 Upload the file and save it. 
 
@@ -226,11 +226,11 @@ Session Completed
 
 Above is the password that we needed to get into the user 'robot' and grab our second key. 
 
-< 18. logging into robot account >
+<img width="362" height="72" alt="18  logging into robot account" src="https://github.com/user-attachments/assets/c9a17b57-d914-49a2-ab44-d671261b9ba0" />
 
 And below is the second flag 
 
-< 3. second flag >
+<img width="273" height="55" alt="4  second flag" src="https://github.com/user-attachments/assets/0a0bb0d6-42dd-41ec-bc3b-53171f3f4e4c" />
 
 Now all we need to do is get the last flag. 
 
@@ -300,7 +300,8 @@ cat /root/key-3-of-3.txt
 <root flag>
 
 ```
-<4. last flag>
+
+<img width="693" height="60" alt="4  last flag" src="https://github.com/user-attachments/assets/cf4a6e14-fc03-4504-a673-78740c5cebb1" />
 
 Congratulations you have completed the room!
 
