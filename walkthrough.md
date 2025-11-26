@@ -105,7 +105,7 @@ Run the command:
 
 ```bash
 
-wget <server/fsocity.dic
+wget <server>/fsocity.dic
 
 ```
 
